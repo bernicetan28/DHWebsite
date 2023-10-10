@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <title>Depression Help</title>
+    <link rel="stylesheet" href="../CSS/Css_Design.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbarbox"> 
+            <img class = "logo" src="../images/logo.png">
+            <img id ="menu" class = "mobilemenu" src="../images/menu.svg" alt ="menu">
+            <nav class>
+                <img id ="exit" class = "mobileexit" src="../images/close.png" alt ="exit">
+                <ul class="menulist-one">
+                    <li> <a href="../home.html">Home</a></li>
+                    <li> <a href="../Tabs/DepressionInfo.html">Depression Info</a></li>
+                    <li> <a href="../Tabs/Resources.html">Resources</a></li>
+                    <li><a href="../Tabs/FindHelp.html">Find Help</a></li>
+                    <li> <a href="../Tabs/AboutUs.html">About Us</a></li>
+                </ul>
+                <ul class = "menulist-two">
+                    <li><a href = "../LoginSignup/Login.html">Login</a></li>
+                    <li class = "signupbutton"> <a href = "../LoginSignup/SignUp.html" >Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+<main>
+
+ <article class="home5">
+    <h3>Depression Explaination</h3>
+    <p>Depression is a common mental healh disorder worldwide, where more than 280 million people are suffering from (World Health Organization, 2021). An estimate of 5&percnt; of adults and 5.7&percnt; of the elderly suffer from depression. It can affect people severely to the point that they function poorly when performing their daily activities. Depression at its worse can lead people to have suicidal thoughts and commit suicide. Over 700000 people are victims of suicide each year.
+    </p>
+
+    <p>Thankfully, there are ways to effectively treat and overcome depression. However, not everyone will be able to afford treatments as there are many factors such as the lack of resources, lack of health-care professionals and stigma surrounding mental disorders that makes it hard to be accessible. Therefore, it is important for all of us to be educated on depression to help those who are in need or even ourselves.</p>
+</article>
+    <h3 class = "emp">Get educated on depression by clicking the links below</h3>
+
+ <section class="sct">
+    <a href="./Info/Symptoms.html">
+    <button><b>Symptoms of Depression</b></button></a>
+
+    <a href="./Info/Causes.html">
+    <button><b>Causes of Depression</b></button></a>
+
+    <a href="./Info/Types.html">
+    <button><b>Types of Depression</b></button></a>
+    
+ </section>
+
+ <article class="home3">
+    <h3>Prevention / How to cope</h3>
+    <ul>
+        <li><b>Build strong relationships with your loved ones.</b>&nbsp;Reach out to your friends or family when you're having a hard time. Having social support can reduce your chances of having depression.</li><br>
+        <li><b>Reduce stress.</b>&nbsp;Reduce stress by avoiding overcommitments and learn to let things go when it is too much for you to handle.</li><br>
+        <li><b>Exercise.</b>&nbsp;It is clinically proven that exercising can help prevent depression. It releases endorphins which boosts your mood and reduce chemicals that can cause depression. Try getting at least 10 minutes of exercise a day.</li><br>
+        <li><b>Get enough sleep.</b>&nbsp;People who lack sleep tend to have a higher chance of getting depression. High-quality sleep is important for mental and physical health.</li><br>
+        <li><b>Maintain a healthy diet.</b>&nbsp;Having a high-fat diet can cause depression. Having an unhealthy diet can also cause you to not have sufficient nutrients to maintain a healthy mind. Make sure you aren't skipping meals as going too long between having a meal can make you feel tired.</li>
+    </ul>
+</article>
+
+<div class="infoex">
+    <p>After reading the information provided about depression, if you or someone you know are experiencing any of these symptoms, do seek for professional help in <a href="FindHelp.html">Find Help</a>.</p>
+</div>
+    <br>
+
+
+</main>
+
+<footer>
+    <small><i>Copyright &copy; 2022 Depression Help</i></small>
+</footer>
+</body>
+<script>
+    const menuBut = document.getElementById('menu')
+        nav = document.querySelector('nav');
+        exitBut = document.getElementById('exit');
+
+    menuBut.addEventListener('click', () => {
+        nav.classList.add('menuclick');
+
+    })
+
+    exitBut.addEventListener('click', () => {
+        nav.classList.remove('menuclick');
+
+    })
+
+</script>
+</html>

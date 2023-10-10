@@ -1,0 +1,707 @@
+body{
+    background: white;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.navbar{
+    background: white;
+    padding: 1em;
+}
+
+.navbarbox{
+    display:flex;
+    place-content: space-between;
+}
+
+.mobilemenu{
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+.logo{
+    height: 75px;
+    width: 170px;
+}
+
+
+nav{
+    list-style-type: none;
+    overflow: auto;
+    position: fixed;
+    z-index: 999;
+    width: 60%;
+    right: 0;
+    top: 0;
+    background:#9499b1;
+    height: 100vh;
+    padding: 1em;
+    display:none;
+}
+
+nav ul{
+    margin-top: 1em;
+    float:right;
+    width: 100%;
+}
+
+nav.menuclick{
+    display: block;
+}
+
+h1{
+    color:rgba(0, 0, 0, 0.637);
+}
+
+nav li{
+    
+    padding: 20px 25px;
+}
+
+nav li a{
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+    display: block;
+    margin: 7px;
+}
+
+.mobileexit{
+    float:right;
+    margin: 1.4em;
+    margin-right: 1em;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.menulist-one li{
+    width:auto;
+    padding: 1.6em 12px;
+}
+
+.menulist-one li a{
+    font-size:1.2em;
+}
+
+a:hover{
+    font-weight:bold;
+}
+
+
+#exit{
+    width: 30px;
+    height: 30px;
+}
+
+.mobile-list{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 1230px){
+    .mobilemenu, .mobileexit{
+        display: none;
+    }
+    
+    .navbar .navbarbox{
+        display: grid;
+        grid-template-columns: 150px auto;
+       
+    }
+
+    .navbar nav{
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .navbar nav ul{
+        display: flex;
+        
+    }
+
+    nav li a {
+        font-size:21px;
+    }
+    
+    .navbar nav ul a{
+        text-align: center;
+    }
+
+    .menulist-one li{
+        width: 6.5em;
+        
+    }
+    .menulist-one a{
+        color: #7984A5;
+    }
+
+    .menulist-two{
+        padding-left: 2em;
+    }
+    
+    .menulist-two li a{
+        font-size: 16px;
+        background-color: #A4A9C3;
+        padding: 10px;
+        height: 25px;
+        width: 4em;
+        border: 3px solid #b5b9cf;
+        border-radius: 50em;
+    }
+
+    .menulist-two .signupbutton a{
+        background-color: transparent;
+        color:#9499b1;
+    }
+
+    .menulist-two li{
+        padding: 10px;
+        color:white;
+    }
+
+    .navbarbox{
+        place-content: space-between;
+    }
+    
+}
+
+.menulist-two li a{
+    color: white;
+}
+
+.menulist-one li{
+    padding-left: 1.4em;
+}
+
+
+.menulist-one, .menulist-two{
+    list-style-type: none;
+}
+
+
+
+section{
+    padding: 2em 3em 3em 3em;
+}
+
+.abt section{
+    padding-bottom: 0;
+    margin-top: 10px;
+}
+
+.home1{
+    background-color: #A4A9C3;
+    overflow:auto;
+    color: white;
+    padding: 4em 3em;
+}
+
+#img12{
+    float: left;
+    padding-right: 1.6em;
+}
+
+.img1{
+    width: 13em;
+    height: auto;
+}
+
+.home2{
+    text-align: center;
+    padding: 3em;
+    padding-bottom: 5em;
+    background-size: cover;
+    background-image: url(../images/glit.jpg);
+}
+
+h3{
+    text-align: center;
+    font-size:30px;
+    color:rgba(0, 0, 0, 0.637);
+}
+
+h2{
+    text-align: center;
+    font-size:30px;
+    color:rgba(0, 0, 0, 0.637);
+    font-weight: bold;
+    font-family: Arial;
+    text-transform: uppercase;
+}
+
+
+.title{
+    background-color: #989eb1;
+    color: rgb(71, 71, 71);
+    margin: 0px;
+    padding: 15px 0;
+    font-size: 25px;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    font-size: 1.1em;
+    min-width: 25px;
+    width: 100%;
+}
+
+article ul {
+    color:white;
+    font-size: 22px;
+}
+
+table th{
+    background-color: #A4A9C3;
+    color:#38496a;
+    text-align: center;
+    padding: 12px;
+}
+
+table td{
+    background-color: #525c751e;
+    color:rgba(0, 0, 0, 0.637);
+    text-align: center;
+    padding: 12px;
+}
+
+.cause{
+    background-color: #A4A9C3;
+    color: black;
+    padding: 4em 3em;
+    background-image: url(../images/cotton.jpg);
+}
+
+.home3{
+    background-color: #38496a;
+    padding: 4em 3em;
+    color:white;
+}
+
+.home3 h3{
+    color:rgb(255, 255, 255)
+}
+
+.home3 ul{
+    color:white;
+}
+
+.cause ul{
+    color:black;
+}
+
+.disclaimer{
+    text-align: center;
+    padding: 1em 3em;
+}
+
+footer{
+    padding: 3em;
+}
+
+p{
+    font-size: 22px;
+}
+
+.homemain{
+    height: 12em;
+    text-align: center;
+    font-family: Tahoma;
+    padding: 7em 1.3em;
+    letter-spacing: 2px;
+    font-size: 1.8em;
+    background-size: cover;
+    background-image: url(../images/clouds.png);
+}
+
+.dh{
+    color: #7984A5;
+}
+
+.d{
+    color: #7984A5;
+}
+
+.h{
+    color: #D57176;
+}
+
+.infoex{
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.infoex a{
+    color: #D57176;
+}
+.res{
+    background-image: url(../images/ice.jpg);
+    overflow:auto;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.ref a{
+    background-color: #7984A5;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1.2em;
+}
+
+.home3 a, .home1 a{
+    color: #D57176;
+}
+
+
+
+.ref{
+    padding: 0 2em;
+    
+}
+
+.vid{
+    padding: 1em 3em;
+    
+}
+
+iframe{
+    height: 40em;
+    width: 100%;
+    position: relative;
+}
+
+.sct a, .ref a{
+    background-color: white;
+    text-decoration: none;
+    padding: 0.5em 0em;
+}
+
+.sct button, .ref button{
+    background-color:#989eb1;
+    width: 30em;
+    display: inline-block;
+}
+
+.sct button:hover, .ref button:hover{
+    color: #38496a;
+}
+
+.sct{
+    padding-top:40px;
+    background-color: white;
+    position:relative;
+    margin: auto;
+    width: 25em;
+    margin-bottom: 2em;
+}
+
+.ref{
+    padding-top:40px;
+    position:relative;
+    margin: auto;
+    width: 25em;
+    margin-bottom: 2em;
+    background-color: transparent;
+    text-align: center;
+}
+
+.emp{
+    padding-top: 1em;
+    margin-bottom: 0;
+}
+
+.emergencyhelp{
+    padding-left:2em;
+    padding-right:2em;
+    background-color: white;
+}
+
+.home4 {
+    background-color: #A4A9C3;
+    overflow:auto;
+    color: white;
+    padding: 3em;
+    padding-top: 1em;
+}
+
+.cal ul{
+    color: #D57176;
+    padding-left: 0;
+    margin: 0;
+}
+
+.abt ul{
+    font-size:20px;
+    display: table;
+    margin: 0 auto;
+    list-style-position:inside;
+    text-align: left;
+    padding-left: 0;
+}
+
+.cal{
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    list-style-position:inside;
+    padding-bottom: 2em;
+}
+
+
+.formsignup, .formlogin, .form{
+    width: 360px;
+    height: auto;
+    margin: auto;
+    padding-top: 0;
+}
+
+#submitsuccess{
+    width: auto;
+    text-align: center;
+}
+
+form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 20px;
+    display:inline-block;
+    margin-bottom: 10px;
+}
+
+form input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid rgb(212, 210, 210);
+    height: 30px;
+    display: block
+}
+
+.signupform .formcont, .loginform .formcont, .formcontfind{
+    padding-top:40px;
+    background-color: white;
+    position:relative;
+    margin: auto;
+    width: 25em;
+    padding: 20px 10px;
+    margin-top: 7em;
+    margin-bottom: 4em;
+}
+
+.formcontfind{
+    margin-top: 2em;
+    margin-bottom: 5em;
+    padding-top: 3em;
+}
+
+.submitcontrolinput .controlinput.success {
+    padding-top: 2em;
+}
+
+.loginform .formcont{
+    padding-bottom: 2em;
+}
+
+.form{
+    padding-bottom: 2.4em;
+}
+
+.mainfindhelp{
+    background-color: #A4A9C3;
+}
+
+.formcont h2{
+    margin: 0.3em 5px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium';
+    text-transform: capitalize;
+}
+
+
+
+.controlinput{
+    margin-bottom: 0;
+    position:relative;
+    padding-bottom: 2px;
+}
+
+.controlinput small{
+    visibility:hidden;
+    position:relative;
+    width: 100%;
+    height: 7px;
+}
+
+
+.controlinput.success input{
+    border: 2px solid #04AA6D;
+}
+
+.controlinput.error input{
+    border: 2px solid red;
+}
+
+
+.controlinput.success #submitsuccess{
+    left: 9em;
+}
+
+.controlinput.success #submitsuccesslog{
+    left: 8em;
+}
+
+.controlinput.success #submitted{
+    left: 8em;
+}
+
+
+.controlinput.error small{
+    color: red;
+    visibility: visible;
+    height: 7px;
+}
+.controlinput.success small{
+    color: #04AA6D;
+    visibility: visible;
+    text-align: center;
+    height: 7px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    box-shadow: 0 0 0 30px white inset ;
+}
+
+.controlinput input{
+    background-color: #eee;
+    display:block;
+    width: 26em;
+}
+
+.signupbody{
+    
+    background-color: #7984A5;
+    justify-content: center;
+}
+
+.loginbody{
+    background-color: #7984A5;
+    justify-content: center;
+}
+
+.loginbody footer{
+    padding-top: 5em;
+}
+
+button {
+    width: 27.2em;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top:24px;
+  }
+
+.contact{
+    font-size: 24px;
+    font-family: Tahoma;
+    text-align: center;
+}
+
+.sym dl dt{
+    padding: 1px 2em;
+}
+
+.emo{
+    background-color: #A4A9C3;
+    color: white;
+    padding: 1em 3em 3em 3em;
+}
+
+.emo dl dt, .phy dl dt{
+    font-size: 20px;
+    color: black;
+}
+
+.phy dl dd{
+    color:white;
+}
+
+.phy{
+    background-color: #7984A5;;
+    padding: 1em 3em 3em 3em;
+}
+
+.whatcause p{
+    padding: 1em 4em;
+}
+
+.type dl dt{
+    text-align: center;
+    padding: 1em 0em;
+}
+
+.type dl dd{
+    text-align: center;
+    margin-left: 0;
+    color:#eee;
+}
+
+.type dl{
+    padding: 1em 2em 3em 2em;
+    background-color: #7984A5;
+}
+
+.home5, .hotlines{
+    background-image: url(../images/blue.jpg);
+    overflow:auto;
+    color: white;
+    padding: 4em 3em;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.hotlines{
+    padding-top: 1em;
+}
+
+.hotlines table tbody tr td{
+    background-color: white;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.hotlines table tbody th{
+    color: rgb(27, 26, 26);
+    width: 10em;
+}
+
+.abt{
+    background-size: cover;
+    background-image: url(../images/glit.jpg);
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+}
+
+
+.loginbody footer small, .signupbody footer small{
+    color:#eee;
+}

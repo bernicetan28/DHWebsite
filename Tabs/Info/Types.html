@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <title>Depression Help</title>
+    <link rel="stylesheet" href="../../CSS/Css_Design.css">
+    
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbarbox"> 
+            <img class = "logo" src="../../images/logo.png">
+            <img id ="menu" class = "mobilemenu" src="../../images/menu.svg" alt ="menu">
+            <nav class>
+                <img id ="exit" class = "mobileexit" src="../../images/close.png" alt ="exit">
+                <ul class="menulist-one">
+                    <li> <a href="../../home.html">Home</a></li>
+                    <li> <a href="../../Tabs/DepressionInfo.html">Depression Info</a></li>
+                    <li> <a href="../../Tabs/Resources.html">Resources</a></li>
+                    <li><a href="../../Tabs/FindHelp.html">Find Help</a></li>
+                    <li> <a href="../../Tabs/AboutUs.html">About Us</a></li>
+                </ul>
+                <ul class = "menulist-two">
+                    <li><a href = "../../LoginSignup/Login.html">Login</a></li>
+                    <li class = "signupbutton"> <a href = "../../LoginSignup/SignUp.html" >Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+<main>
+    
+<article class = "type">
+    <h2>Types of Depression</h2>
+    
+    <dl>
+        <dt><b>Dysthymia</b></dt>
+            <dd>Also known as Persistent Depressive Disorder. It is not as severe as major depression but it is more persistent</dd><br>
+        <dt><b>Bipolar Disorder</b></dt>
+            <dd>Also known as manic depression. A person suffering from bipolar disorder has periods of depression and mania but with some periods of feeling normal in between.</dd><br>
+        <dt><b>Postpartum Depression</b></dt>
+            <dd>Depression that is experienced by mothers who has just given birth to their baby. </dd><br>
+        <dt><b>Premenstrual Dysphoric Disorder</b></dt>
+            <dd>A severe deperession that occurs on the second half of the menstrual cycle</dd><br>
+        <dt><b>Psychotic Depression</b></dt>
+            <dd>Happens when a persons depressive episodes are very severe until they develop a false sense of reality.</dd><br>
+        <dt><b>Seasonal Affective Disorder</b></dt>
+            <dd>This disorder has a seasonal pattern. It is related to the variation of light exposure in different seasons.</dd>
+    </dl>
+</article>
+
+</main>
+<footer>
+    <small><i>Copyright &copy; 2022 Depression Help</i></small>
+</footer>
+</body>
+
+<script>
+    const menuBut = document.getElementById('menu')
+        nav = document.querySelector('nav');
+        exitBut = document.getElementById('exit');
+
+    menuBut.addEventListener('click', () => {
+        nav.classList.add('menuclick');
+
+    })
+
+    exitBut.addEventListener('click', () => {
+        nav.classList.remove('menuclick');
+
+    })
+
+</script>
+</html>

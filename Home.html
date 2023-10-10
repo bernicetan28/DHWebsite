@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <title>Depression Help</title>
+    <link rel="stylesheet" href="CSS/Css_Design.css">
+</head>
+<body>
+    
+<div class="navbar">
+    <div class="navbarbox"> 
+        <img class = "logo" src="images/logo.png">
+        <img id ="menu" class = "mobilemenu" src="images/menu.svg" alt ="menu">
+        <nav class>
+            <img id ="exit" class = "mobileexit" src="images/close.png" alt ="exit">
+            <ul class="menulist-one">
+                <li> <a href="home.html">Home</a></li>
+                <li> <a href="./Tabs/DepressionInfo.html">Depression Info</a></li>
+                <li> <a href="./Tabs/Resources.html">Resources</a></li>
+                <li><a href="./Tabs/FindHelp.html">Find Help</a></li>
+                <li> <a href="./Tabs/AboutUs.html">About Us</a></li>
+            </ul>
+            <ul class = "menulist-two">
+                <li><a href = "./LoginSignup/Login.html">Login</a></li>
+                <li class = "signupbutton"> <a href = "./LoginSignup/SignUp.html" >Sign Up</a></li>
+            </ul>
+        
+        </nav>
+    </div>
+</div>
+<main>
+    
+<div class = "homemain">
+    <h1>Welcome to <span class="d">Depression</span> <span class = "h">Help</span></h1>
+
+</div>
+<section class = "home1">
+    <h3>What is Depression?</h3>
+    <div id = "img12">
+    <img class="img1" src="images/think.svg"></a></div>
+    <p>Depression is a <i>mental health condition</i> where one feels the constant feeling of sadness and lost of interest in activities they used to enjoy. It can lead to many emotional and physical issues which decreases ones capability to perform their daily activities. </p> 
+    
+    <p>In general, depression occurs from a mix of events and factors. This results in different symptoms of depression from minor to severe. Thankfully, depression is treatable.</p>
+
+    <p>To learn more about depression, click <a href="./Tabs/DepressionInfo.html">here</a> &nbsp;</p> 
+ 
+    
+</section>
+</div>
+<div class = "home2">
+<h3>Warning Signs of Depression</h3>
+<table border="1">
+    <tr>
+        <th>Emotionally</th>
+        <th>Physically</th>
+    </tr>
+    <tr>
+        <td>Sad, anxious or low mood</td>
+        <td>Loss of appetite or over-eating</td>
+    </tr>
+    <tr>
+        <td>Low self esteem, guilt</td>
+        <td>Trouble sleeping</td>
+    </tr>
+    <tr>
+        <td>Hopelessness</td>
+        <td>Decreased energy</td>
+    </tr>
+    <tr>
+        <td>Suicidal thoughts</td>
+        <td>Increased tearfulness</td>
+    </tr>
+    <tr>
+        <td>Lost of interest and motivation</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Poor concentration</td>
+        <td></td>
+    </tr>
+</table>
+
+</div>
+<section class = "home3">
+   <h3>Concerned you or someone you know might have depression?</h3>
+    <p>If you have taken note of the warning signs of depression and is concerned you or someone you love might have depression, please do provide help or seek for help and support from someone you trust or a professional. This website will provide you with resources to help you during this difficult time. </p>
+
+    <p>For professional help, please click the&nbsp;<a href="./Tabs/FindHelp.html">Find Help</a>&nbsp;button.</p>
+</section>
+
+    <div class = "disclaimer">
+    <p><small>The purpose of this website it to provide information about depression. If you are suffering from depression, seek appropriate healthcare professionals to help you. This website is not a substitute to professional advice or diagnosis.</small></p><br>
+    </div>
+    
+</main> 
+<footer>
+    <small><i>Copyright &copy; 2022 Depression Help</i></small>
+</footer>
+</body>
+
+    <script>
+        const menuBut = document.getElementById('menu')
+            nav = document.querySelector('nav');
+            exitBut = document.getElementById('exit');
+
+        menuBut.addEventListener('click', () => {
+            nav.classList.add('menuclick');
+
+        })
+
+        exitBut.addEventListener('click', () => {
+            nav.classList.remove('menuclick');
+
+        })
+
+    </script>
+
+</html>
+
+
+
+
